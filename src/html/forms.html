@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <form action="/tacos">
+        <button type="button">Do Not Submit Form</button>
+        <p>
+            <label for="username">Enter a username</label>
+            <input id="username" type="text" placeholder="username" name="username">
+        </p>
+        <p>
+            <label for="password">Enter a password</label>
+            <input id="password" type="password" placeholder="password" name="password">
+        </p>
+        <p>
+            <label for="color">Enter a color</label>
+            <input id="color" type="color" name="color">
+        </p>
+        <button>In The Middle</button>
+        <p>
+            <label for="month">Enter a month</label>
+            <input id="month" type="month" name="month">
+            <label for="time">Enter a time</label>
+            <input id="time" type="time" name="time">
+        </p>
+        <p>
+            <label>
+                Enter a number
+                <input id="number" type="number" placeholder="enter a number" name="num" min="1" max="100">
+            </label>
+
+        </p>
+        <button>Submit</button>
+        <input type="submit" value="Click Me!">
+    </form>
+    <hr>
+    <button>Do Nothing</button>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query" placeholder="Youtube search">
+    </form>
+
+    <h2>More inputs!</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree" checked>
+        <label for="agree">I agree to everything</label>
+        <button>Submit</button>
+    </form>
+    <form action="/cats">
+        <input type="radio" name="size" id="s" value="small">
+        <label for="s">Small</label><br>
+        <input type="radio" name="size" id="m" value="medium">
+        <label for="m">Medium</label><br>
+        <input type="radio" name="size" id="l" value="large">
+        <label for="l">Large</label><br>
+        <button>Submit</button>
+    </form>
+    <form action="/mouse">
+        <p>
+            <label for="meal">Please Select an Entree</label>
+            <select name="meal" id="meal">
+                <option value="fish">Fish</option>
+                <option value="veg" selected>Vegetarian</option>
+                <option value="steak">Steak</option>
+            </select>
+        </p>
+        <p>
+            <label for="cheese">Amount of Cheese:</label>
+            <input type="range" id="cheese" name="cheese_level" min="1" max="10" step="1" value="5">
+        </p>
+        <p>
+            <label for="notes">Other Notes</label><br>
+            <textarea id="notes" name="notes" rows="5" cols="40" placeholder="Type notes here"></textarea>
+        </p>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
