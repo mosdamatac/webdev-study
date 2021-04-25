@@ -1,3 +1,3 @@
 # webdev-study
 
-Repository for test codes
+Lecture code from https://www.udemy.com/course/the-web-developer-bootcamp/
